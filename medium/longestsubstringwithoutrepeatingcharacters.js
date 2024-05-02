@@ -1,20 +1,29 @@
 var lengthOfLongestSubstring = function (s) {
-  let length = 0;
+  let maxLength = 0;
+  let substring = "";
 
-  const store = {}; // hashmap
-  let string = "";
   for (let i = 0; i < s.length; i++) {
-    if (!(s[i] in store)) {
-      store[s[i]] = s[i];
-    } else {
+    const char = s[i];
+
+    // check if the index is existing
+    const index = substring.indexOf(char);
+
+    // if it's existing, slice the left part of the substring
+    if (index !== -1) {
+      substring = substring.slice(index + 1);
     }
+
+    substring += char;
+
+    maxLength = Math.max(maxLength, substring.length);
   }
 
-  return store;
+  return maxLength;
 };
 
-console.log(lengthOfLongestSubstring("pwwkeew"));
+console.log(lengthOfLongestSubstring("pwwkew"));
 
+//
 // p = p
 // pw = w
 // pww = w
@@ -77,3 +86,20 @@ console.log(lengthOfLongestSubstring("pwwkeew"));
 // a = 1
 // ab = 2
 // abd = 3
+
+/**
+ * pwwkew
+ * p = p
+ * pw = pw
+ * pww = w
+ * we = e
+ * wek = k
+ * wekw=
+ */
+
+/**
+ * pwwkew
+ * p = p
+ * w  = pw
+ * w = w
+ */
