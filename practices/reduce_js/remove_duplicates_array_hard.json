@@ -1,0 +1,50 @@
+[
+  {
+    "version": "1.1",
+    "accountType": "cb",
+    "fileType": "excel",
+    "name": "cb_certs_excel",
+    "url": "https://f1.iafcertsearch.org/assets/t/cb/1.1/cb_certs.xlsx",
+    "sample": false,
+    "recommended": true,
+    "description": "The Certification Template Version 1.1 supports adding of legal identifiers, such as Tax ID, Company ID Number, and Business Registration Number, for a Certified Entity.",
+    "instructions": false,
+    "excel": "https://f1.iafcertsearch.org/assets/t/cb/1.1/cb_certs.xlsx",
+    "xml": "https://f1.iafcertsearch.org/assets/t/cb/1.1/cb_certs.xml"
+  },
+  {
+    "version": "1.1",
+    "accountType": "cb",
+    "fileType": "xml",
+    "name": "cb_certs_xml",
+    "url": "https://f1.iafcertsearch.org/assets/t/cb/1.1/cb_certs.xml",
+    "sample": false,
+    "recommended": true,
+    "description": "The Certification Template Version 1.1 supports adding of legal identifiers, such as Tax ID, Company ID Number, and Business Registration Number, for a Certified Entity.",
+    "instructions": false
+  },
+  {
+    "version": "1.0",
+    "accountType": "cb",
+    "fileType": "excel",
+    "name": "cb_certs_excel",
+    "url": "https://f1.iafcertsearch.org/assets/t/cb/1.0/cb_certs.xlsx",
+    "sample": false,
+    "recommended": false,
+    "description": "The Certification Template Version 1.0 is the initial template the system releases.",
+    "instructions": false,
+    "excel": "https://f1.iafcertsearch.org/assets/t/cb/1.0/cb_certs.xlsx",
+    "xml": "https://f1.iafcertsearch.org/assets/t/cb/1.0/cb_certs.xml"
+  },
+  {
+    "version": "1.0",
+    "accountType": "cb",
+    "fileType": "xml",
+    "name": "cb_certs_xml",
+    "url": "https://f1.iafcertsearch.org/assets/t/cb/1.0/cb_certs.xml",
+    "sample": false,
+    "recommended": false,
+    "description": "The Certification Template Version 1.0 is the initial template the system releases.",
+    "instructions": false
+  }
+]
