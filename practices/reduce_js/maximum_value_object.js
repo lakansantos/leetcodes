@@ -36,11 +36,11 @@ const scores = [
 // return name
 
 const getHighestScore = (scoresData) => {
-  const highestScore = scoresData.reduce((acc, cur) => {
+  const result = scoresData.reduce((acc, cur) => {
     return !acc.score || cur.score > acc.score ? cur : acc;
   }, {});
 
-  return highestScore;
+  return result.name;
 };
 
 console.log(getHighestScore(scores));

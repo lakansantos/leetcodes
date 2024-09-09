@@ -5,9 +5,8 @@ const flattenArray = (nestedArray) => {
   const result = nestedArray.reduce((acc, cur) => {
     if (Array.isArray(cur)) {
       return acc.concat(flattenArray(cur));
-    } else {
-      return acc.concat(cur);
     }
+    return acc.concat(cur);
   }, []);
 
   return result;

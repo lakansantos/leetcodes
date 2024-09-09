@@ -4,7 +4,17 @@ const sales = [
   { productId: 1, productName: "Laptop", quantity: 1, price: 1000 },
   { productId: 3, productName: "Tablet", quantity: 3, price: 700 },
   { productId: 2, productName: "Phone", quantity: 2, price: 500 },
+  { productId: 2, productName: "Phone", quantity: 2, price: 500 },
 ];
+
+/* 
+output should be like this
+ {
+  '1': { productName: 'Laptop', total_sales: 3000 },
+  '2': { productName: 'Phone', total_sales: 3500 },
+  '3': { productName: 'Tablet', total_sales: 2100 }
+}
+*/
 
 const result = sales.reduce(
   (acc, { productId, productName, quantity, price }) => {

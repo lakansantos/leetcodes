@@ -8,14 +8,17 @@ const items = [
 // { fruits: 250, vegetables: 200, grains: 200 }
 
 const calculateSum = (array) => {
-  return array.reduce((acc, cur) => {
-    const { category, value } = cur;
+  const result = array.reduce((acc, { category, value }) => {
     if (!acc[category]) {
       acc[category] = 0;
     }
+
     acc[category] += value;
+
     return acc;
   }, {});
+
+  return result;
 };
 
 console.log(calculateSum(items));

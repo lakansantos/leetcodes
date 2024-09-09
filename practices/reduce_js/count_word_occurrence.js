@@ -12,7 +12,11 @@ const sentence =
 // });
 
 const result = sentence.split(" ").reduce((acc, word) => {
-  acc[word] = (acc[word] || 0) + 1;
+  if (!acc[word]) {
+    acc[word] = 0;
+  }
+
+  acc[word] += 1;
   return acc;
 }, {});
 
