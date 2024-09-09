@@ -27,7 +27,7 @@
 //         "xml": "https://f1.iafcertsearch.org/assets/t/cb/1.0/cb_certs.xml"
 //     }
 // ]
-const dataJSON = require("./remove_duplicates_array_hard.json");
+const dataJSON = require("../remove_duplicates_array_hard.json");
 
 const array = dataJSON;
 
